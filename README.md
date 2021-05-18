@@ -1,2 +1,2 @@
 # portfolio
-My portfolio repisotry
+My portfolio repository
