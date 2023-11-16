@@ -2,17 +2,22 @@
 <html>
 <title>Jamin - Portfolio</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="main.css">
-<link rel="icon" href="profile2.jpg">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="favicon.ico">
+
 <!-- Boostrap -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <!-- semantic UI -->
 <link rel="stylesheet" type='text/css' href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/5.15.4/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<script src="https://kit.fontawesome.com/1b262efb1b.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
@@ -22,13 +27,152 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+body {
+    background: linear-gradient(to bottom, #080000, #040004);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+/* Introduction section styles */
+  .introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+    background-color: #fff;
+    margin-top: -50px;
+    }
+    
+    .profile-picture img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    }
+    
+    .description {
+    text-align: center;
+    margin-top: 30px;
+    }
+    
+    .description h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: black;
+    }
+    
+    .description p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    max-width: 600px;
+    color: black;
+    }
+    
+    .btn {
+    display: inline-block;
+    background-color: #16a085;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    }
+    
+    .btn:hover {
+    background-color: #fff;
+    color: #16a085;
+    }
+
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+    background-color: whitesmoke;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Skills section styles */
+#skills {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .skill {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 300px;
+  }
+  
+  .skill:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .skill i {
+    color: #2705a2;
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .skill h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .skill p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
 </style>
+
 <body class="w3-black">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <img src="sidepic.jpg" style="width:100%">
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
@@ -38,7 +182,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p>ABOUT</p>
   </a>
   <a href="#Projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
+    <i class="fa fa-file w3-xxlarge"></i>
     <p>PROJECTS</p>
   </a>
   <a href="#stack" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
@@ -61,79 +205,58 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </div>
 </div>
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small"></span>Hi I'm Jamin Onuegbu. I am a Python Dev.</h1>
-        <div class="w3-display-container">
-          <img src="profile2.jpg" style="width:50%" alt="Jamin Onuegbu">
-        </div>
-  </header>
-
-  <button class="w3-button w3-light-grey w3-padding-large">
-      <a href="mailto:jtechlab2007@gmail.com"><i class="fa fa-paper-plane"></i> GET IN TOUCH</a>
-  </button>
-
+  <section class="introduction">
+      <div class="profile-picture">
+        <img src="test.jpg" alt="Profile Picture">
+      </div>
+      <div class="description">
+        <h1>Hi, I'm Jamin</h1>
+        <p>I'm a Software Developer based in Nigeria. I love building and functional softwares that help businesses grow.</p>
+        <a href="#" class="btn">View My Work</a>
+      </div>
+  </section>
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">Introduction</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Hi I am Jamin a Python Developer With two years of experience with python. I can create Scripts, Games, Desktop apps, Websites(server-side), etc. All with the python programming language and other languages and tools. I also teach python to a large number students online.
-    </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Python3</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div>
-    <p class="w3-wide">Data analysis</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:55%"></div>
-    </div>
-    <p class="w3-wide">Data science</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:40%"></div>
-    </div><br>
     
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">11+</span><br>
-        Partners
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">35+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">30+</span><br>
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">5k+</span><br>
-        Students
-      </div>
-    </div>
+    <section style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;">
 
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <a href=""></a><i class="fa fa-download"></i> Download Resume
-    </button>
-    
+      <h2 style="color:black;">Introduction</h2>
+      <hr style="width:100px" class="w3-opacity">
+      <p style="color:black">I am a skilled software developer with 3+ years of developing, deploying and maintaining software solutions, my technical expertise includes Python, Django, Flask, and other technologies. 
+      I love developing high-quality solutions that are scalable.
+      </p>
+      <p style="color:black">
+      Whether it's contributing to an existing project or taking the lead on a new initiative, I am always eager to take on new challenges and push the boundaries of what's possible.
+      </p>
+    </section>
 
-    <!-- Grid for pricing tables -->
-    <div id="stack">
-    <h3 class="w3-padding-16 w3-text-light-grey" id="stack">My Stack</h3>
-    </div>
-    
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">Testimonials</h3>  
-    <img src="pexels-pixabay-220453.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Onuegbu Isaac.</span> MD at J.J. WILLMIN NIG LTD.</p>
-    <p>He is a wonderful and skillful developer</p><br>
-    
-    <img src="pexels-chloe-1043471.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right"></span> CEO at SoftwareX.</p>
-    <p>Jamin is a Great developer. I recommend you hiring him.</p>
+    <section id="skills">
+      <h2 style="color: black;">Skills</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <i class="fa fa-html5"></i>
+          <h3>HTML5</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+        </div>
+        <div class="skill">
+          <i class="fa fa-bar-chart-o"></i>
+          <h3>Data Analysis</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+        </div>
+        <div class="skill">
+          <i class="fa-solid fa-database"></i>
+          <h3>Database Management</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+        </div>
+        <div class="skill">
+          <i class="fa-brands fa-python"></i>
+          <h3>Python</h3>
+          <p>I am a proffesional python developer with 3 years of experience with the python programming language.</p>
+        </div>
+      </div>
+    </section>
+   
   <!-- End About Section -->
   </div>
   
@@ -156,13 +279,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           <h3>JWeather - Weather Map with django Python [API]</h3>
         </div>
         <hr>
-        <div class="ui">
+        <div class="ui container">
           <img src="project3.png" style="width:100%">
           <button class="ui button">
             <i class="fa fa-github fa-solid"></i> <a href="https://github.com/JaminCO/chirrper"> Source Code</a>
           </button>
           <button class="ui button">
-            <a href="https://chirrper.onrender.com/"><i class="fa fa-globe"></i> Live Link</a>
+            <a href="https://chirrper-app.herokuapp.com/"><i class="fa fa-globe"></i> Live Link</a>
           </button>
           <h3>Chirrper - A blog webapp with flask python [WebApp] </h3>
         </div>
@@ -192,22 +315,18 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           <h3>PMS - Project Management System with django python [WebApp]</h3>
         </div>
         <hr>
-        <br>
-        <img src="Pong.png" style="width:100%">
-        <h3>Arcade game - Pong with pygame python</h3>
-        <hr>
-        <img src="notes.png" style="width:100%">
-        <h3>Note app with kivy python</h3>
-        <hr>
-        <img src="../images/wedding.jpg" style="width:100%">
-        <img src="../images/p6.jpg" style="width:100%">
+        <div>
+          <img src="project4.png" style="width:100%">
+          <button class="ui button">
+            <i class="fa fa-github fa-solid"></i> <a href="https://github.com/JaminCO/school-management-system-terminal">Source Code</a>
+          </button>
+          <button class="ui button">
+            <a href="#"><i class="fa fa-globe"></i> Live Link</a>
+          </button>
+          <h3>SMS - School Management System with python & SQLite [Script]</h3>
+        </div>
       </div>
     <!-- End photo grid -->
-    </div class="ui">
-      <h2> Profiles <h2>
-      <button class="w3-button w3-light-grey w3-padding-large">
-        <a href="https://replit.com/@Echendu"><i></i> Replit account</a>
-      </button>
   <!-- End Portfolio Section -->
   </div>
 
@@ -219,7 +338,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <div class="w3-section">
       <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Country: Rivers, Nigeria</p>
       <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone:
-        <a href="https://wa.me/message/K6AQJKDPGC7PG1">+2347080934619</a>
+        <a href="http://wa.me/message/K6AQJKDPGC7PG1">+2347080934619</a>
       </p>
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email:
         <a href="mailto:jtechlab2007@gmail.com">jtechlab2007@gmail.com</a>
@@ -247,7 +366,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <!-- <a href="instagram"><i class="fa fa-instagram w3-hover-opacity"></i></a> -->
     <!-- <a href="snapchat.com"><i class="fa fa-snapchat w3-hover-opacity"></i></a> -->
     <a href="https://www.pinterest.com/jaminonuegbu/"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
-    <a href="https://wa.me/message/K6AQJKDPGC7PG1"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
+    <a href="http://wa.me/message/K6AQJKDPGC7PG1"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
 
     <a href="https://www.github.com/JaminCO"><i class="fa fa-github w3-hover-opacity"></i></a>
     <a href="https://www.twitter.com/jaminonuegbu"><i class="fa fa-twitter w3-hover-opacity"></i></a>
