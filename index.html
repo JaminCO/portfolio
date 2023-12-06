@@ -393,18 +393,18 @@ body {
     <hr class="w3-opacity">
 
       <div>
-        <form id="contact-form">
+        <form id="contact-form" action="http://127.0.0.1:5000/submit_form" method="post">
           <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required>
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+            <textarea class="form-control" name="message" id="message" rows="5" placeholder="Enter your message" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
@@ -424,6 +424,7 @@ body {
     }
     }
   </script>
+  <script type="text/javascript" src="script.js"></script>
 
 
   <footer>

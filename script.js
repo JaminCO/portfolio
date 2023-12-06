@@ -33,9 +33,10 @@ form.addEventListener('submit', (e) => {
   formData.append('email', email);
   formData.append('message', message);
   
-  fetch('https://port-back.echendu.repl.co/contact', {
+  fetch('https://portbackend.pythonanywhere.com/submit_form', {
     method: 'POST',
-    body: formData
+    body: formData,
+    
   })
   .then(response => {
     if (!response.ok) {
