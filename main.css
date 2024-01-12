@@ -271,10 +271,15 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   
   .blog-post h3 {
     margin: 20px;
+    color: #000;
+    display: block;
+    font-size: 1.17em;
+    font-weight: bold;
   }
   
   .blog-post p {
     margin: 20px;
+    color: #000000;
   }
   
   .blog-post a {
